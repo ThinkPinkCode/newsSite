@@ -25158,8 +25158,10 @@ module.exports = function (str) {
 },{}],233:[function(require,module,exports){
 var React = require('react');
 var ReactRouter = require('react-router');
+
 var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
+var hashHistory = ReactRouter.hashHistory;
 
 var Base = require('./components/Base.jsx');
 var Page1 = require('./components/page1.jsx');
@@ -25167,7 +25169,7 @@ var Page2 = require('./components/page2.jsx');
 
 var Routes = React.createElement(
     Router,
-    null,
+    { history: hashHistory },
     React.createElement(
         Route,
         { path: '/', component: Base },
