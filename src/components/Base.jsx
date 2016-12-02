@@ -4,9 +4,11 @@ var Base = React.createClass({
     render: function() {
         return (
         <div>
-            <div>
-            <h1>Metro Detroit News</h1>
-                <h2>Top Stories In Our Area</h2>
+            <div className = "container">
+                <div className="h1">
+                    <p>Christmas in Metro Detroit</p>
+                </div>
+                <h2>Top Attractions In Our Area</h2>
                 <a href="http://www.twitter.com">Twitter</a>
                 <a href="www.facebook.com">Facebook</a>
                 <a href="www.instagram.com">Instagram</a>
@@ -18,7 +20,6 @@ var Base = React.createClass({
             <div>
             </div>
             {this.props.children}
-            <h1>Footer</h1>
         </div>
         )
     }

@@ -25192,16 +25192,20 @@ var Base = React.createClass({
             null,
             React.createElement(
                 "div",
-                null,
+                { className: "container" },
                 React.createElement(
-                    "h1",
-                    null,
-                    "Metro Detroit News"
+                    "div",
+                    { className: "h1" },
+                    React.createElement(
+                        "p",
+                        null,
+                        "Christmas in Metro Detroit"
+                    )
                 ),
                 React.createElement(
                     "h2",
                     null,
-                    "Top Stories In Our Area"
+                    "Top Attractions In Our Area"
                 ),
                 React.createElement(
                     "a",
@@ -25231,12 +25235,7 @@ var Base = React.createClass({
             ),
             "//button to go to News Page //button to go to Photos page",
             React.createElement("div", null),
-            this.props.children,
-            React.createElement(
-                "h1",
-                null,
-                "Footer"
-            )
+            this.props.children
         );
     }
 });
