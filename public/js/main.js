@@ -25164,8 +25164,8 @@ var Route = ReactRouter.Route;
 var hashHistory = ReactRouter.hashHistory;
 
 var Base = require('./components/Base.jsx');
-var Page1 = require('./components/page1.jsx');
-var Page2 = require('./components/page2.jsx');
+var News = require('./components/news.jsx');
+var Photos = require('./components/photos.jsx');
 
 var Routes = React.createElement(
     Router,
@@ -25173,33 +25173,69 @@ var Routes = React.createElement(
     React.createElement(
         Route,
         { path: '/', component: Base },
-        React.createElement(Route, { path: '/page1', component: Page1 }),
-        React.createElement(Route, { path: '/page2', component: Page2 })
+        React.createElement(Route, { path: '/news', component: News }),
+        React.createElement(Route, { path: '/photos', component: Photos })
     )
 );
 
 module.exports = Routes;
 
-},{"./components/Base.jsx":234,"./components/page1.jsx":235,"./components/page2.jsx":236,"react":231,"react-router":182}],234:[function(require,module,exports){
+},{"./components/Base.jsx":234,"./components/news.jsx":235,"./components/photos.jsx":236,"react":231,"react-router":182}],234:[function(require,module,exports){
 var React = require('react');
 
 var Base = React.createClass({
-    displayName: 'Base',
+    displayName: "Base",
 
     render: function () {
         return React.createElement(
-            'div',
+            "div",
             null,
             React.createElement(
-                'h1',
+                "div",
                 null,
-                'Header'
+                React.createElement(
+                    "h1",
+                    null,
+                    "Metro Detroit News"
+                ),
+                React.createElement(
+                    "h2",
+                    null,
+                    "Top Stories In Our Area"
+                ),
+                React.createElement(
+                    "a",
+                    { href: "http://www.twitter.com" },
+                    "Twitter"
+                ),
+                React.createElement(
+                    "a",
+                    { href: "www.facebook.com" },
+                    "Facebook"
+                ),
+                React.createElement(
+                    "a",
+                    { href: "www.instagram.com" },
+                    "Instagram"
+                ),
+                React.createElement(
+                    "a",
+                    { href: "www.linkedin.com" },
+                    "LinkedIn"
+                ),
+                React.createElement(
+                    "a",
+                    { href: "www.gmail.com" },
+                    "Email"
+                )
             ),
+            "//button to go to News Page //button to go to Photos page",
+            React.createElement("div", null),
             this.props.children,
             React.createElement(
-                'h1',
+                "h1",
                 null,
-                'Footer'
+                "Footer"
             )
         );
     }
@@ -25210,25 +25246,40 @@ module.exports = Base;
 },{"react":231}],235:[function(require,module,exports){
 var React = require('react');
 
-var Page1 = React.createClass({
-    displayName: 'Page1',
+var News = React.createClass({
+    displayName: 'News',
 
     render: function () {
         return React.createElement(
-            'h1',
+            'div',
             null,
-            'Page 1'
+            React.createElement(
+                'h1',
+                null,
+                'Article Title'
+            ),
+            React.createElement(
+                'h2',
+                null,
+                'Article Subtitle'
+            ),
+            React.createElement(
+                'p',
+                null,
+                'Article text'
+            ),
+            '//thumbnail images //location of article post //profile icon of poster'
         );
     }
 });
 
-module.exports = Page1;
+module.exports = News;
 
 },{"react":231}],236:[function(require,module,exports){
 var React = require('react');
 
-var Page2 = React.createClass({
-    displayName: 'Page2',
+var Photos = React.createClass({
+    displayName: 'Photos',
 
     render: function () {
         return React.createElement(
@@ -25239,7 +25290,7 @@ var Page2 = React.createClass({
     }
 });
 
-module.exports = Page2;
+module.exports = Photos;
 
 },{"react":231}],237:[function(require,module,exports){
 var React = require('react');
