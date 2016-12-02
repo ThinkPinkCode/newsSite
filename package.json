@@ -14,10 +14,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@blueprintjs/core": "^1.1.0",
     "babel-preset-react": "^6.16.0",
     "babelify": "^7.3.0",
     "history": "^1.13.1",
     "react": "^15.4.1",
+    "react-addons-css-transition-group": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-router": "^3.0.0",
     "watchify": "^3.7.0"
