@@ -1,7 +1,7 @@
 var React = require('react');
 
 var Base = React.createClass({
-    render: function(){
+    render: function() {
         return (
         <div>
             <h1>Header</h1>

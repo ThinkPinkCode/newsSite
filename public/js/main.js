@@ -25208,7 +25208,9 @@ module.exports = Base;
 },{"react":231}],235:[function(require,module,exports){
 var React = require('react');
 
-var Page1 = react.createClass({
+var Page1 = React.createClass({
+    displayName: 'Page1',
+
     render: function () {
         return React.createElement(
             'h1',
@@ -25223,7 +25225,9 @@ module.exports = Page1;
 },{"react":231}],236:[function(require,module,exports){
 var React = require('react');
 
-var Page2 = react.createClass({
+var Page2 = React.createClass({
+    displayName: 'Page2',
+
     render: function () {
         return React.createElement(
             'h1',
@@ -25240,6 +25244,6 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Routes = require('./Routes.jsx');
 
-ReactDOM.render(Routes, document.getElementById('main'));
+ReactDOM.render(Routes, document.getElementById('nav'));
 
 },{"./Routes.jsx":233,"react":231,"react-dom":29}]},{},[237]);
